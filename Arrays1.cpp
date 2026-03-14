@@ -52,13 +52,13 @@ int main(){           // when we have to store multiple things of same type
 // cout<<sum;
 
 // Q. find the maximum value in the array
-      //   int arr[]={3,6,90,13,46,7,45};
-      //   int n=sizeof(arr)/4;
-      //   int f=arr[0];
-      //   for(int i=0;i<n;i++)
-      // {if(arr[i+1]>f)
-      //   f=arr[i+1];}
-      //   cout<<f;
+        // int arr[]={3,6,90,13,46,7,45};
+        // int n=sizeof(arr)/4;
+        // int f=arr[0];
+        // for(int i=1;i<n;i++)
+        // {if(arr[i]>f)
+        //  f=arr[i];}
+        //  cout<<f;
 
       // INT_MIN print the minimum value & INT_MAX print the maximum value.
 
@@ -146,23 +146,37 @@ int main(){           // when we have to store multiple things of same type
   // Q. write a program to reverse the array without using 
   // any extra array ?
 
-// int arr[6]={45,23,89,70,11,22};
-// for(int i=0;i<=5;i++)
+// int arr[]={45,23,89,70,11,22};
+// int n=sizeof(arr)/4;
+// for(int i=0;i<n;i++)
 // cout<<arr[i]<<" ";
 // cout<<endl;
-// for(int i=0;i<=5;i++)
-// {if(i<5-i)
+// for(int i=0;i<n;i++)
+// {if(i<=n/2-1)
 // {int temp=arr[i];
-// arr[i]=arr[5-i];
-// arr[5-i]= temp;}}
+// arr[i]=arr[n-1-i];
+// arr[n-1-i]= temp;}}
 
-//  for(int i=0;i<=5;i++)
+//  for(int i=0;i<=n-1;i++)
 // cout<<arr[i]<<" ";
 
 
 
 // Q. if an array arr contains n elements, then check if the 
 // given array is a palindrome or not
+
+  // int arr[]={1,2,3,4,2,1};
+  // int n=sizeof(arr)/4;
+  // int i=0;
+  // int j=n-1;
+  // bool ans=true;
+  // while(i<=j){
+  //   if(arr[i++]!=arr[j--]){
+  //     ans=false;
+  //     break;
+  //   }
+  // }
+  // cout<<ans<<endl;
 
 
 
@@ -185,7 +199,7 @@ int main(){           // when we have to store multiple things of same type
       // arr[3][2]=4; 
       // arr[4][0]=54; 
       // arr[4][1]=34; 
-      // arr[4][2]=87;    // 4th row 3rd column box gets 87
+      // arr[4][2]=87;    // 5th row 3rd column box gets 87
       // for(int i=0;i<=4;i++){
       //   for(int j=0;j<=2;j++)
       //   cout<<arr[i][j]<<"  ";
